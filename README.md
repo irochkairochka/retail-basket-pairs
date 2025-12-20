@@ -19,14 +19,10 @@
 - распространяются свободно для образовательных целей.  
 
 ##### Столбцы исходного датасета:  
-
-TransactionID — уникальный идентификатор транзакции;  
-
-CustomerID — идентификатор клиента;  
-
-Products — строка со списком товаров в корзине, разделённых запятыми;  
-
-Timestamp — дата и время покупки.  
+`TransactionID` — уникальный идентификатор транзакции;  
+`CustomerID` — идентификатор клиента;  
+`Products` — строка со списком товаров в корзине, разделённых запятыми;  
+`Timestamp` — дата и время покупки.  
 
 ### Важный момент:  
 В описании набора данных указано, что это synthetic retail data: транзакции сгенерированы специально для аналитики, не основаны на реальных чеках и не содержат персональных данных.  
@@ -92,20 +88,20 @@ Timestamp — дата и время покупки.
 
 Пример ключевых наблюдений (по результатам ноутбука):  
 
-![retail-basket-pairs](.screenshots/top-20-pairs-margin.jpg)  
+![retail-basket-pairs](screenshots/top-20-pairs-margin.jpg)  
 
 Топ‑20 пар по суммарной марже показывает интересный результат: лидируют комбинации высокомаржинальных товаров с товарами повседневного спроса (например, Cereal + Shampoo, Detergent + Fish), а не просто самые частые пары.  
 Пара Cereal + Milk, которая лидирует по частоте в базовом проекте [promo-pairs-margin-ranking](https://github.com/irochkairochka/promo-pairs-margin-ranking), остаётся в топе, но уступает комплектам с более дорогими и высокомаржинальными товарами.  
 
-![retail-basket-pairs](.screenshots/heatmap-margin.jpg)  
+![retail-basket-pairs](screenshots/heatmap-margin.jpg)  
 
 Heatmap позволяет визуально увидеть «горячие» клетки — пары, которые одновременно популярны и высокомаржинальны, и поэтому интересны для промо‑наборов.
 
-![retail-basket-pairs](.screenshots/products-price-margin.jpg)  
+![retail-basket-pairs](screenshots/products-price-margin.jpg)  
 
 Таблица прайс‑листа показывает категоризацию товаров и распределение цен и наценок по категориям.
 
-![retail-basket-pairs](.screenshots/best-20-pairs-margin.jpg)  
+![retail-basket-pairs](screenshots/best-20-pairs-margin.jpg)  
 
 Таблица лучших 20 пар по самой частой встречаемости с количеством транзакций пары.  
 
